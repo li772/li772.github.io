@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Blog | My New Hugo Site</title>
+<title>Blog | Bobo New Hugo Site</title>
 <meta name="keywords" content="">
 <meta name="description" content="Architecture https://icyfenix.cn
 服务架构演进史 单体 → 原始分布式 为了提升性能和算力，想增加多台单体计算机构建原始分布式架构
@@ -21,15 +21,15 @@
 更具体”体现在尽管 SOA 本身还是属抽象概念，而不是特指某一种具体的技术，但它比单体架构和前面所列举的三种架构模式的操作性要更强，已经不能简单视其为一种架构风格，而是可以称为一套软件设计的基础平台了。它拥有领导制定技术标准的组织 Open CSA；有清晰软件设计的指导原则，譬如服务的封装性、自治、松耦合、可重用、可组合、无状态，等等；明确了采用 SOAP 作为远程调用的协议，依靠 SOAP 协议族（WSDL、UDDI 和一大票 WS-*协议）来完成服务的发布、发现和治理；利用一个被称为企业服务总线（Enterprise Service Bus，ESB）的消息管道来实现各个子系统之间的通信交互，令各服务间在 ESB 调度下无须相互依赖却能相互通信，既带来了服务松耦合的好处，也为以后可以进一步实施业务流程编排（Business Process Management，BPM）提供了基础；使用服务数据对象（Service Data Object，SDO）来访问和表示数据，使用服务组件架构（Service Component Architecture，SCA）来定义服务封装的形式和服务运行的容器，等等。在这一整套成体系可以互相精密协作的技术组件支持下，若仅从技术可行性这一个角度来评判的话，SOA 可以算是成功地解决了分布式环境下出现的主要技术问题。
 在稍后的远程服务调用一节，笔者会提到 SOAP 协议被逐渐边缘化的本质原因：过于严格的规范定义带来过度的复杂性。而构建在 SOAP 基础之上的 ESB、BPM、SCA、SDO 等诸多上层建筑，进一步加剧了这种复杂性。开发信息系统毕竟不是作八股文章，过于精密的流程和理论也需要懂得复杂概念的专业人员才能够驾驭。">
 <meta name="author" content="">
-<link rel="canonical" href="https://li772.github.io/post/blog/">
+<link rel="canonical" href="http://li772.github.io/post/blog/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://li772.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://li772.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://li772.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://li772.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://li772.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://li772.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://li772.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://li772.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://li772.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://li772.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -83,7 +83,7 @@
 更具体”体现在尽管 SOA 本身还是属抽象概念，而不是特指某一种具体的技术，但它比单体架构和前面所列举的三种架构模式的操作性要更强，已经不能简单视其为一种架构风格，而是可以称为一套软件设计的基础平台了。它拥有领导制定技术标准的组织 Open CSA；有清晰软件设计的指导原则，譬如服务的封装性、自治、松耦合、可重用、可组合、无状态，等等；明确了采用 SOAP 作为远程调用的协议，依靠 SOAP 协议族（WSDL、UDDI 和一大票 WS-*协议）来完成服务的发布、发现和治理；利用一个被称为企业服务总线（Enterprise Service Bus，ESB）的消息管道来实现各个子系统之间的通信交互，令各服务间在 ESB 调度下无须相互依赖却能相互通信，既带来了服务松耦合的好处，也为以后可以进一步实施业务流程编排（Business Process Management，BPM）提供了基础；使用服务数据对象（Service Data Object，SDO）来访问和表示数据，使用服务组件架构（Service Component Architecture，SCA）来定义服务封装的形式和服务运行的容器，等等。在这一整套成体系可以互相精密协作的技术组件支持下，若仅从技术可行性这一个角度来评判的话，SOA 可以算是成功地解决了分布式环境下出现的主要技术问题。
 在稍后的远程服务调用一节，笔者会提到 SOAP 协议被逐渐边缘化的本质原因：过于严格的规范定义带来过度的复杂性。而构建在 SOAP 基础之上的 ESB、BPM、SCA、SDO 等诸多上层建筑，进一步加剧了这种复杂性。开发信息系统毕竟不是作八股文章，过于精密的流程和理论也需要懂得复杂概念的专业人员才能够驾驭。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://li772.github.io/post/blog/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://li772.github.io/post/blog/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-10-04T18:00:39+08:00" />
 <meta property="article:modified_time" content="2022-10-04T18:00:39+08:00" />
 
@@ -113,13 +113,13 @@
       "@type": "ListItem",
       "position":  2 ,
       "name": "Posts",
-      "item": "https://li772.github.io/post/"
+      "item": "http://li772.github.io/post/"
     }, 
     {
       "@type": "ListItem",
       "position":  3 ,
       "name": "Blog",
-      "item": "https://li772.github.io/post/blog/"
+      "item": "http://li772.github.io/post/blog/"
     }
   ]
 }
@@ -134,21 +134,21 @@
   "keywords": [
     
   ],
-  "articleBody": "Architecture https://icyfenix.cn\n服务架构演进史 单体 → 原始分布式 为了提升性能和算力，想增加多台单体计算机构建原始分布式架构\n但由于硬件的限制，以及网络可靠性的限制，让分布式存储、远程调用都停止不前\n光是“远程”二字带来的网络环境下的新问题，譬如，远程的服务在哪里（服务发现），有多少个（负载均衡），网络出现分区、超时或者服务出错了怎么办（熔断、隔离、降级），方法的参数与返回结 果如何表示（序列化协议），信息如何传输（传输协议），服务权限如何管理（认证、授权），如何保证通信安全（网络安全层），如何令调用不同机器的服务返回相同的结果（分布式数据一致性）等一系列问题，全部都需要设计者耗费大量心思。\n原始分布式 → 大型单体系统 对于小型系统——即由单台机器就足以支撑其良好运行的系统，单体不仅易于开发、易于测试、易于部署，且由于系统中各个功能、模块、方法的调用过程都是进程内调用，不会发生**进程间通信** （Inter-Process Communication，IPC。广义上讲，可以认为 RPC 属于 IPC 的一种特例，但请注意这里两个“PC”不是同个单词的缩写），因此也是运行效率最高的一种架构风格，完全不应该被贴上“反派角色”的标签，反倒是那些爱赶技术潮流却不顾需求现状的微服务吹捧者更像是个反派。\n在“拆分”这方面，单体系统的真正缺陷不在如何拆分，而在拆分之后的隔离与自治能力上的欠缺。\n由于所有代码都共享着同一个进程空间，不能隔离，也就无法（其实还是有办法的，譬如使用 OSGi 这种运行时模块化框架，但是很别扭、很复杂）做到单独停止、更新、升级某一部分代码\n由于隔离能力的缺失，单体除了难以阻断错误传播、不便于动态更新程序以外，还面临难以技术异构的困难，每个模块的代码都通常需要使用一样的程序语言，乃至一样的编程框架去开发。\n不过，以上列举的这些问题都还不是今天以微服务取代单体系统成为潮流趋势的根本原因，笔者认为最重要的理由是：单体系统很难兼容“Phoenix”的特性。这种架构风格潜在的观念是希望系统的每一个部件，每一处代码都尽量可靠，靠不出或少出缺陷来构建可靠系统。然而战术层面再优秀，也很难弥补战略层面的不足，单体靠高质量来保证高可靠性的思路，在小规模软件上还能运作良好，但系统规模越大，交付一个可靠的单体系统就变得越来越具有挑战性。如本书的前言开篇《什么是\"凤凰架构\"》所说，正是随着软件架构演进，构筑可靠系统从“追求尽量不出错”，到正视“出错是必然”的观念转变，才是微服务架构得以挑战并逐步开始取代运作了数十年的单体架构的底气所在。\n大型单体系统 再拆分 → SOA(Service-Oriented Architecture) 在新旧世纪之交，人们曾经探索过几种服务拆分方法，将一个大的单体系统拆分为若干个更小的、不运行在同一个进程的独立服务，这些服务拆分方法后来导致了**面向服务架构** （Service-Oriented Architecture）的一段兴盛期，我们称其为“SOA 时代 ”。\n当系统演化至事件驱动架构时，原始分布式时代结尾中提到的第二条通往更大规模软件的路径，即仍在并行发展的远程服务调用也迎来了 SOAP 协议的诞生（详见远程服务调用一文），此时“面向服务的架构”（Service Oriented Architecture，SOA）已经有了它登上软件架构舞台所需要的全部前置条件。\n更具体”体现在尽管 SOA 本身还是属抽象概念，而不是特指某一种具体的技术，但它比单体架构和前面所列举的三种架构模式的操作性要更强，已经不能简单视其为一种架构风格，而是可以称为一套软件设计的基础平台了。它拥有领导制定技术标准的组织 Open CSA；有清晰软件设计的指导原则，譬如服务的封装性、自治、松耦合、可重用、可组合、无状态，等等；明确了采用 SOAP 作为远程调用的协议，依靠 SOAP 协议族（WSDL、UDDI 和一大票 WS-*协议）来完成服务的发布、发现和治理；利用一个被称为企业服务总线（Enterprise Service Bus，ESB）的消息管道来实现各个子系统之间的通信交互，令各服务间在 ESB 调度下无须相互依赖却能相互通信，既带来了服务松耦合的好处，也为以后可以进一步实施业务流程编排（Business Process Management，BPM）提供了基础；使用服务数据对象（Service Data Object，SDO）来访问和表示数据，使用服务组件架构（Service Component Architecture，SCA）来定义服务封装的形式和服务运行的容器，等等。在这一整套成体系可以互相精密协作的技术组件支持下，若仅从技术可行性这一个角度来评判的话，SOA 可以算是成功地解决了分布式环境下出现的主要技术问题。\n在稍后的远程服务调用一节，笔者会提到 SOAP 协议被逐渐边缘化的本质原因：过于严格的规范定义带来过度的复杂性。而构建在 SOAP 基础之上的 ESB、BPM、SCA、SDO 等诸多上层建筑，进一步加剧了这种复杂性。开发信息系统毕竟不是作八股文章，过于精密的流程和理论也需要懂得复杂概念的专业人员才能够驾驭。\n微服务时代 • 演进式设计（Evolutionary Design）。容错性设计承认服务会出错，演进式设计则是承认服务会被报废淘汰。一个设计良好的服务，应该是能够报废的，而不是期望得到长存永生。假如系统中出现不可更改、无可替代的服务，这并不能说明这个服务是多么的优秀、多么的重要，反而是一种系统设计上脆弱的表现，微服务所追求的独立、自治，也是反对这种脆弱性的表现。\n可是，如果没有了统一的规范和约束，以前 SOA 所解决的那些分布式服务的问题，不也就一下子都重新出现了吗？的确如此，服务的注册发现、跟踪治理、负载均衡、故障隔离、认证授权、伸缩扩展、传输通信、事务处理，等等，这些问题，在微服务中不再会有统一的解决方案，即使只讨论 Java 范围内会使用到的微服务，光一个服务间远程调用问题，可以列入解决方案的候选清单的就有：RMI（Sun/Oracle）、Thrift（Facebook）、Dubbo（阿里巴巴）、gRPC（Google）、Motan2（新浪）、Finagle（Twitter）、brpc（百度）、Arvo（Hadoop）、JSON-RPC、REST，等等；光一个服务发现问题，可以选择的就有：Eureka（Netflix）、Consul（HashiCorp）、Nacos（阿里巴巴）、ZooKeeper（Apache）、Etcd（CoreOS）、CoreDNS（CNCF），等等。其他领域的情况也是与此类似，总之，完全是八仙过海，各显神通的局面。\n后微服务时代 “前途广阔”不仅仅是一句恭维赞赏的客气话，当虚拟化的基础设施从单个服务的容器扩展至由多个容器构成的服务集群、通信网络和存储设施时，软件与硬件的界限便已经模糊。一旦虚拟化的硬件能够跟上软件的灵活性，那些与业务无关的技术性问题便有可能从软件层面剥离，悄无声息地解决于硬件基础设施之内，让软件得以只专注业务，真正“围绕业务能力构建”团队与产品。如此，DCE 中未能实现的“透明的分布式应用”成为可能，Martin Fowler 设想的“凤凰服务器 “成为可能，Chad Fowler 提出的“不可变基础设施 ”也成为可能，从软件层面独力应对分布式架构所带来的各种问题，发展到应用代码与基础设施软、硬一体，合力应对架构问题的时代，现在常被媒体冠以“云原生”这个颇为抽象的名字加以宣传。云原生时代与此前微服务时代中追求的目标并没有本质改变，在服务架构演进的历史进程中，笔者更愿意称其为“后微服务时代”。\n不是软件代码的，就算是基础设施？\n为了解决这一类问题，虚拟化的基础设施很快完成了第二次进化，引入了今天被称为“服务网格 ”（Service Mesh）的“边车代理模式”（Sidecar Proxy），如图 1-5 所示。所谓的“边车”是一种带垮斗的三轮摩托，我小时候还算常见，现在基本就只在影视剧中才会看到了。这个场景里指的具体含义是由系统自动在服务容器（通常是指 Kubernetes 的 Pod）中注入一个通信代理服务器，相当于那个挎斗，以类似网络安全里中间人攻击的方式进行流量劫持，在应用毫无感知的情况下，悄然接管应用所有对外通信。这个代理除了实现正常的服务间通信外（称为数据平面通信），还接收来自控制器的指令（称为控制平面通信），根据控制平面中的配置，对数据平面通信的内容进行分析处理，以实现熔断、认证、度量、监控、负载均衡等各种附加功能。这样便实现了既不需要在应用层面加入额外的处理代码，也提供了几乎不亚于程序代码的精细管理能力\n很难从概念上判定清楚一个与应用系统运行于同一资源容器之内的代理服务到底应该算软件还是算基础设施，但它对应用是透明的，不需要改动任何软件代码就可以实现服务治理，这便足够了。服务网格在 2018 年才火起来，今天它仍然是个新潮的概念，仍然未完全成熟，甚至连 Kubernetes 也还算是个新生事物。但笔者相信，未来 Kubernetes 将会成为服务器端标准的运行环境，如同现在 Linux 系统；服务网格将会成为微服务之间通信交互的主流模式，把“选择什么通信协议”、“怎样调度流量”、“如何认证授权”之类的技术问题隔离于程序代码之外，取代今天 Spring Cloud 全家桶中大部分组件的功能，微服务只需要考虑业务本身的逻辑，这才是最理想的**Smart Endpoints** 解决方案。\n",
-  "wordCount" : "112",
+  "articleBody": "Architecture https://icyfenix.cn\n服务架构演进史 单体 → 原始分布式 为了提升性能和算力，想增加多台单体计算机构建原始分布式架构\n但由于硬件的限制，以及网络可靠性的限制，让分布式存储、远程调用都停止不前\n光是“远程”二字带来的网络环境下的新问题，譬如，远程的服务在哪里（服务发现），有多少个（负载均衡），网络出现分区、超时或者服务出错了怎么办（熔断、隔离、降级），方法的参数与返回结 果如何表示（序列化协议），信息如何传输（传输协议），服务权限如何管理（认证、授权），如何保证通信安全（网络安全层），如何令调用不同机器的服务返回相同的结果（分布式数据一致性）等一系列问题，全部都需要设计者耗费大量心思。\n原始分布式 → 大型单体系统 对于小型系统——即由单台机器就足以支撑其良好运行的系统，单体不仅易于开发、易于测试、易于部署，且由于系统中各个功能、模块、方法的调用过程都是进程内调用，不会发生**进程间通信** （Inter-Process Communication，IPC。广义上讲，可以认为 RPC 属于 IPC 的一种特例，但请注意这里两个“PC”不是同个单词的缩写），因此也是运行效率最高的一种架构风格，完全不应该被贴上“反派角色”的标签，反倒是那些爱赶技术潮流却不顾需求现状的微服务吹捧者更像是个反派。\n在“拆分”这方面，单体系统的真正缺陷不在如何拆分，而在拆分之后的隔离与自治能力上的欠缺。\n由于所有代码都共享着同一个进程空间，不能隔离，也就无法（其实还是有办法的，譬如使用 OSGi 这种运行时模块化框架，但是很别扭、很复杂）做到单独停止、更新、升级某一部分代码\n由于隔离能力的缺失，单体除了难以阻断错误传播、不便于动态更新程序以外，还面临难以技术异构的困难，每个模块的代码都通常需要使用一样的程序语言，乃至一样的编程框架去开发。\n不过，以上列举的这些问题都还不是今天以微服务取代单体系统成为潮流趋势的根本原因，笔者认为最重要的理由是：单体系统很难兼容“Phoenix”的特性。这种架构风格潜在的观念是希望系统的每一个部件，每一处代码都尽量可靠，靠不出或少出缺陷来构建可靠系统。然而战术层面再优秀，也很难弥补战略层面的不足，单体靠高质量来保证高可靠性的思路，在小规模软件上还能运作良好，但系统规模越大，交付一个可靠的单体系统就变得越来越具有挑战性。如本书的前言开篇《什么是\"凤凰架构\"》所说，正是随着软件架构演进，构筑可靠系统从“追求尽量不出错”，到正视“出错是必然”的观念转变，才是微服务架构得以挑战并逐步开始取代运作了数十年的单体架构的底气所在。\n大型单体系统 再拆分 → SOA(Service-Oriented Architecture) 在新旧世纪之交，人们曾经探索过几种服务拆分方法，将一个大的单体系统拆分为若干个更小的、不运行在同一个进程的独立服务，这些服务拆分方法后来导致了**面向服务架构** （Service-Oriented Architecture）的一段兴盛期，我们称其为“SOA 时代 ”。\n当系统演化至事件驱动架构时，原始分布式时代结尾中提到的第二条通往更大规模软件的路径，即仍在并行发展的远程服务调用也迎来了 SOAP 协议的诞生（详见远程服务调用一文），此时“面向服务的架构”（Service Oriented Architecture，SOA）已经有了它登上软件架构舞台所需要的全部前置条件。\n更具体”体现在尽管 SOA 本身还是属抽象概念，而不是特指某一种具体的技术，但它比单体架构和前面所列举的三种架构模式的操作性要更强，已经不能简单视其为一种架构风格，而是可以称为一套软件设计的基础平台了。它拥有领导制定技术标准的组织 Open CSA；有清晰软件设计的指导原则，譬如服务的封装性、自治、松耦合、可重用、可组合、无状态，等等；明确了采用 SOAP 作为远程调用的协议，依靠 SOAP 协议族（WSDL、UDDI 和一大票 WS-*协议）来完成服务的发布、发现和治理；利用一个被称为企业服务总线（Enterprise Service Bus，ESB）的消息管道来实现各个子系统之间的通信交互，令各服务间在 ESB 调度下无须相互依赖却能相互通信，既带来了服务松耦合的好处，也为以后可以进一步实施业务流程编排（Business Process Management，BPM）提供了基础；使用服务数据对象（Service Data Object，SDO）来访问和表示数据，使用服务组件架构（Service Component Architecture，SCA）来定义服务封装的形式和服务运行的容器，等等。在这一整套成体系可以互相精密协作的技术组件支持下，若仅从技术可行性这一个角度来评判的话，SOA 可以算是成功地解决了分布式环境下出现的主要技术问题。\n在稍后的远程服务调用一节，笔者会提到 SOAP 协议被逐渐边缘化的本质原因：过于严格的规范定义带来过度的复杂性。而构建在 SOAP 基础之上的 ESB、BPM、SCA、SDO 等诸多上层建筑，进一步加剧了这种复杂性。开发信息系统毕竟不是作八股文章，过于精密的流程和理论也需要懂得复杂概念的专业人员才能够驾驭。\n微服务时代 • 演进式设计（Evolutionary Design）。容错性设计承认服务会出错，演进式设计则是承认服务会被报废淘汰。一个设计良好的服务，应该是能够报废的，而不是期望得到长存永生。假如系统中出现不可更改、无可替代的服务，这并不能说明这个服务是多么的优秀、多么的重要，反而是一种系统设计上脆弱的表现，微服务所追求的独立、自治，也是反对这种脆弱性的表现。\n可是，如果没有了统一的规范和约束，以前 SOA 所解决的那些分布式服务的问题，不也就一下子都重新出现了吗？的确如此，服务的注册发现、跟踪治理、负载均衡、故障隔离、认证授权、伸缩扩展、传输通信、事务处理，等等，这些问题，在微服务中不再会有统一的解决方案，即使只讨论 Java 范围内会使用到的微服务，光一个服务间远程调用问题，可以列入解决方案的候选清单的就有：RMI（Sun/Oracle）、Thrift（Facebook）、Dubbo（阿里巴巴）、gRPC（Google）、Motan2（新浪）、Finagle（Twitter）、brpc（百度）、Arvo（Hadoop）、JSON-RPC、REST，等等；光一个服务发现问题，可以选择的就有：Eureka（Netflix）、Consul（HashiCorp）、Nacos（阿里巴巴）、ZooKeeper（Apache）、Etcd（CoreOS）、CoreDNS（CNCF），等等。其他领域的情况也是与此类似，总之，完全是八仙过海，各显神通的局面。\n后微服务时代 “前途广阔”不仅仅是一句恭维赞赏的客气话，当虚拟化的基础设施从单个服务的容器扩展至由多个容器构成的服务集群、通信网络和存储设施时，软件与硬件的界限便已经模糊。一旦虚拟化的硬件能够跟上软件的灵活性，那些与业务无关的技术性问题便有可能从软件层面剥离，悄无声息地解决于硬件基础设施之内，让软件得以只专注业务，真正“围绕业务能力构建”团队与产品。如此，DCE 中未能实现的“透明的分布式应用”成为可能，Martin Fowler 设想的“凤凰服务器 “成为可能，Chad Fowler 提出的“不可变基础设施 ”也成为可能，从软件层面独力应对分布式架构所带来的各种问题，发展到应用代码与基础设施软、硬一体，合力应对架构问题的时代，现在常被媒体冠以“云原生”这个颇为抽象的名字加以宣传。云原生时代与此前微服务时代中追求的目标并没有本质改变，在服务架构演进的历史进程中，笔者更愿意称其为“后微服务时代”。\n不是软件代码的，就算是基础设施？\n为了解决这一类问题，虚拟化的基础设施很快完成了第二次进化，引入了今天被称为“服务网格 ”（Service Mesh）的“边车代理模式”（Sidecar Proxy），如图 1-5 所示。所谓的“边车”是一种带垮斗的三轮摩托，我小时候还算常见，现在基本就只在影视剧中才会看到了。这个场景里指的具体含义是由系统自动在服务容器（通常是指 Kubernetes 的 Pod）中注入一个通信代理服务器，相当于那个挎斗，以类似网络安全里中间人攻击的方式进行流量劫持，在应用毫无感知的情况下，悄然接管应用所有对外通信。这个代理除了实现正常的服务间通信外（称为数据平面通信），还接收来自控制器的指令（称为控制平面通信），根据控制平面中的配置，对数据平面通信的内容进行分析处理，以实现熔断、认证、度量、监控、负载均衡等各种附加功能。这样便实现了既不需要在应用层面加入额外的处理代码，也提供了几乎不亚于程序代码的精细管理能力\n很难从概念上判定清楚一个与应用系统运行于同一资源容器之内的代理服务到底应该算软件还是算基础设施，但它对应用是透明的，不需要改动任何软件代码就可以实现服务治理，这便足够了。服务网格在 2018 年才火起来，今天它仍然是个新潮的概念，仍然未完全成熟，甚至连 Kubernetes 也还算是个新生事物。但笔者相信，未来 Kubernetes 将会成为服务器端标准的运行环境，如同现在 Linux 系统；服务网格将会成为微服务之间通信交互的主流模式，把“选择什么通信协议”、“怎样调度流量”、“如何认证授权”之类的技术问题隔离于程序代码之外，取代今天 Spring Cloud 全家桶中大部分组件的功能，微服务只需要考虑业务本身的逻辑，这才是最理想的**Smart Endpoints** 解决方案。\nSHA256:BUPWtkTQd6F02mofRnDVfzpZXIM5tr1NS1di7zlxS2k suweiwei0702@163.com\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChiCalqI2ziWKdYTWSuBZFYbWpqAhqeCFF1/iCBbnMK/4bTiu6KNJ11Str8bWT1W6aSnpcdVlTdtWuAgjusagXZbjgkFX0+poxL9X/IDDHLsoeLuCMD6lWK/ZZpa1t98alHAvLtE+cBkaXMJfa+9DVfj1EcoDaxrb6K8Bu1HeHmcbRfks5jjttBFMEIMsDSgcVAhZw8i3CMunEp+6mhV8tE34bqjRqQeJOF1hZpNjD/O+gDGNvJ8yyQj69pdFa+81psaTzr5z7NC1SB5iBMAJT6rVjaoN2GNUOp0msAx+ZtC/Pnmaw0D4SfKb7SxuNl4DWVe+zPRDgwSpPm3Mv14Yd root@libowei\n",
+  "wordCount" : "117",
   "inLanguage": "en",
   "datePublished": "2022-10-04T18:00:39+08:00",
   "dateModified": "2022-10-04T18:00:39+08:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://li772.github.io/post/blog/"
+    "@id": "http://li772.github.io/post/blog/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "My New Hugo Site",
+    "name": "Bobo New Hugo Site",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://li772.github.io/favicon.ico"
+      "url": "http://li772.github.io/favicon.ico"
     }
   }
 }
@@ -170,7 +170,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://li772.github.io" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="http://li772.github.io" accesskey="h" title="Bobo New Hugo Site (Alt + H)">Bobo New Hugo Site</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -204,7 +204,7 @@
   <header class="post-header">
     
     <h1 class="post-title">
-      Blog<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+      Blog
     </h1>
     <div class="post-meta"><span title='2022-10-04 18:00:39 +0800 CST'>October 4, 2022</span>
 
@@ -244,6 +244,8 @@
 ”（Service Mesh）的“边车代理模式”（Sidecar Proxy），如图 1-5 所示。所谓的“边车”是一种带垮斗的三轮摩托，我小时候还算常见，现在基本就只在影视剧中才会看到了。这个场景里指的具体含义是由系统自动在服务容器（通常是指 Kubernetes 的 Pod）中注入一个通信代理服务器，相当于那个挎斗，以类似网络安全里中间人攻击的方式进行流量劫持，在应用毫无感知的情况下，悄然接管应用所有对外通信。这个代理除了实现正常的服务间通信外（称为数据平面通信），还接收来自控制器的指令（称为控制平面通信），根据控制平面中的配置，对数据平面通信的内容进行分析处理，以实现熔断、认证、度量、监控、负载均衡等各种附加功能。这样便实现了既不需要在应用层面加入额外的处理代码，也提供了几乎不亚于程序代码的精细管理能力</p>
 <p>很难从概念上判定清楚一个与应用系统运行于同一资源容器之内的代理服务到底应该算软件还是算基础设施，但它对应用是透明的，不需要改动任何软件代码就可以实现服务治理，这便足够了。服务网格在 2018 年才火起来，今天它仍然是个新潮的概念，仍然未完全成熟，甚至连 Kubernetes 也还算是个新生事物。但笔者相信，未来 Kubernetes 将会成为服务器端标准的运行环境，如同现在 Linux 系统；服务网格将会成为微服务之间通信交互的主流模式，把“选择什么通信协议”、“怎样调度流量”、“如何认证授权”之类的技术问题隔离于程序代码之外，取代今天 Spring Cloud 全家桶中大部分组件的功能，微服务只需要考虑业务本身的逻辑，这才是最理想的**<a href="https://martinfowler.com/articles/microservices.html#SmartEndpointsAndDumbPipes">Smart Endpoints</a>**
 解决方案。</p>
+<p>SHA256:BUPWtkTQd6F02mofRnDVfzpZXIM5tr1NS1di7zlxS2k <a href="mailto:suweiwei0702@163.com">suweiwei0702@163.com</a></p>
+<p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChiCalqI2ziWKdYTWSuBZFYbWpqAhqeCFF1/iCBbnMK/4bTiu6KNJ11Str8bWT1W6aSnpcdVlTdtWuAgjusagXZbjgkFX0+poxL9X/IDDHLsoeLuCMD6lWK/ZZpa1t98alHAvLtE+cBkaXMJfa+9DVfj1EcoDaxrb6K8Bu1HeHmcbRfks5jjttBFMEIMsDSgcVAhZw8i3CMunEp+6mhV8tE34bqjRqQeJOF1hZpNjD/O+gDGNvJ8yyQj69pdFa+81psaTzr5z7NC1SB5iBMAJT6rVjaoN2GNUOp0msAx+ZtC/Pnmaw0D4SfKb7SxuNl4DWVe+zPRDgwSpPm3Mv14Yd root@libowei</p>
 
 
   </div>
@@ -256,7 +258,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://li772.github.io">My New Hugo Site</a></span>
+    <span>&copy; 2022 <a href="http://li772.github.io">Bobo New Hugo Site</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

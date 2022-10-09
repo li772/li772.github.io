@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://li772.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Bobo New Hugo Site</title>
+    <link>http://li772.github.io/</link>
+    <description>Recent content on Bobo New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://li772.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Oct 2022 11:39:00 +0800</lastBuildDate><atom:link href="http://li772.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog3</title>
+      <link>http://li772.github.io/post/blog3/</link>
+      <pubDate>Sun, 09 Oct 2022 11:39:00 +0800</pubDate>
+      
+      <guid>http://li772.github.io/post/blog3/</guid>
+      <description>this is third push to my blog.</description>
+    </item>
+    
+    <item>
+      <title>Blog2</title>
+      <link>http://li772.github.io/post/blog2/</link>
+      <pubDate>Sun, 09 Oct 2022 11:14:45 +0800</pubDate>
+      
+      <guid>http://li772.github.io/post/blog2/</guid>
+      <description>使用架构 hugo
+参考文章
+https://blog.csdn.net/qq_42185895/article/details/113780415
+搭建位置：阿里云服务器+部署在github上
+遇到的问题： github相关
+服务器需要增加一个新的ssh 2021之后不再支持用户名+密码登录，需要使用token进行登录 </description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://li772.github.io/post/blog/</link>
+      <pubDate>Tue, 04 Oct 2022 18:00:39 +0800</pubDate>
+      
+      <guid>http://li772.github.io/post/blog/</guid>
+      <description>Architecture https://icyfenix.cn
+服务架构演进史 单体 → 原始分布式 为了提升性能和算力，想增加多台单体计算机构建原始分布式架构
+但由于硬件的限制，以及网络可靠性的限制，让分布式存储、远程调用都停止不前
+光是“远程”二字带来的网络环境下的新问题，譬如，远程的服务在哪里（服务发现），有多少个（负载均衡），网络出现分区、超时或者服务出错了怎么办（熔断、隔离、降级），方法的参数与返回结 果如何表示（序列化协议），信息如何传输（传输协议），服务权限如何管理（认证、授权），如何保证通信安全（网络安全层），如何令调用不同机器的服务返回相同的结果（分布式数据一致性）等一系列问题，全部都需要设计者耗费大量心思。
+原始分布式 → 大型单体系统 对于小型系统——即由单台机器就足以支撑其良好运行的系统，单体不仅易于开发、易于测试、易于部署，且由于系统中各个功能、模块、方法的调用过程都是进程内调用，不会发生**进程间通信** （Inter-Process Communication，IPC。广义上讲，可以认为 RPC 属于 IPC 的一种特例，但请注意这里两个“PC”不是同个单词的缩写），因此也是运行效率最高的一种架构风格，完全不应该被贴上“反派角色”的标签，反倒是那些爱赶技术潮流却不顾需求现状的微服务吹捧者更像是个反派。
+在“拆分”这方面，单体系统的真正缺陷不在如何拆分，而在拆分之后的隔离与自治能力上的欠缺。
+由于所有代码都共享着同一个进程空间，不能隔离，也就无法（其实还是有办法的，譬如使用 OSGi 这种运行时模块化框架，但是很别扭、很复杂）做到单独停止、更新、升级某一部分代码
+由于隔离能力的缺失，单体除了难以阻断错误传播、不便于动态更新程序以外，还面临难以技术异构的困难，每个模块的代码都通常需要使用一样的程序语言，乃至一样的编程框架去开发。
+不过，以上列举的这些问题都还不是今天以微服务取代单体系统成为潮流趋势的根本原因，笔者认为最重要的理由是：单体系统很难兼容“Phoenix”的特性。这种架构风格潜在的观念是希望系统的每一个部件，每一处代码都尽量可靠，靠不出或少出缺陷来构建可靠系统。然而战术层面再优秀，也很难弥补战略层面的不足，单体靠高质量来保证高可靠性的思路，在小规模软件上还能运作良好，但系统规模越大，交付一个可靠的单体系统就变得越来越具有挑战性。如本书的前言开篇《什么是&amp;quot;凤凰架构&amp;quot;》所说，正是随着软件架构演进，构筑可靠系统从“追求尽量不出错”，到正视“出错是必然”的观念转变，才是微服务架构得以挑战并逐步开始取代运作了数十年的单体架构的底气所在。
+大型单体系统 再拆分 → SOA(Service-Oriented Architecture) 在新旧世纪之交，人们曾经探索过几种服务拆分方法，将一个大的单体系统拆分为若干个更小的、不运行在同一个进程的独立服务，这些服务拆分方法后来导致了**面向服务架构** （Service-Oriented Architecture）的一段兴盛期，我们称其为“SOA 时代 ”。
+当系统演化至事件驱动架构时，原始分布式时代结尾中提到的第二条通往更大规模软件的路径，即仍在并行发展的远程服务调用也迎来了 SOAP 协议的诞生（详见远程服务调用一文），此时“面向服务的架构”（Service Oriented Architecture，SOA）已经有了它登上软件架构舞台所需要的全部前置条件。
+更具体”体现在尽管 SOA 本身还是属抽象概念，而不是特指某一种具体的技术，但它比单体架构和前面所列举的三种架构模式的操作性要更强，已经不能简单视其为一种架构风格，而是可以称为一套软件设计的基础平台了。它拥有领导制定技术标准的组织 Open CSA；有清晰软件设计的指导原则，譬如服务的封装性、自治、松耦合、可重用、可组合、无状态，等等；明确了采用 SOAP 作为远程调用的协议，依靠 SOAP 协议族（WSDL、UDDI 和一大票 WS-*协议）来完成服务的发布、发现和治理；利用一个被称为企业服务总线（Enterprise Service Bus，ESB）的消息管道来实现各个子系统之间的通信交互，令各服务间在 ESB 调度下无须相互依赖却能相互通信，既带来了服务松耦合的好处，也为以后可以进一步实施业务流程编排（Business Process Management，BPM）提供了基础；使用服务数据对象（Service Data Object，SDO）来访问和表示数据，使用服务组件架构（Service Component Architecture，SCA）来定义服务封装的形式和服务运行的容器，等等。在这一整套成体系可以互相精密协作的技术组件支持下，若仅从技术可行性这一个角度来评判的话，SOA 可以算是成功地解决了分布式环境下出现的主要技术问题。
+在稍后的远程服务调用一节，笔者会提到 SOAP 协议被逐渐边缘化的本质原因：过于严格的规范定义带来过度的复杂性。而构建在 SOAP 基础之上的 ESB、BPM、SCA、SDO 等诸多上层建筑，进一步加剧了这种复杂性。开发信息系统毕竟不是作八股文章，过于精密的流程和理论也需要懂得复杂概念的专业人员才能够驾驭。</description>
+    </item>
+    
   </channel>
 </rss>

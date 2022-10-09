@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>https://li772.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Bobo New Hugo Site</title>
+    <link>http://li772.github.io/post/</link>
+    <description>Recent content in Posts on Bobo New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Oct 2022 18:00:39 +0800</lastBuildDate><atom:link href="https://li772.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 11:39:00 +0800</lastBuildDate><atom:link href="http://li772.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog3</title>
+      <link>http://li772.github.io/post/blog3/</link>
+      <pubDate>Sun, 09 Oct 2022 11:39:00 +0800</pubDate>
+      
+      <guid>http://li772.github.io/post/blog3/</guid>
+      <description>this is third push to my blog.</description>
+    </item>
+    
+    <item>
+      <title>Blog2</title>
+      <link>http://li772.github.io/post/blog2/</link>
+      <pubDate>Sun, 09 Oct 2022 11:14:45 +0800</pubDate>
+      
+      <guid>http://li772.github.io/post/blog2/</guid>
+      <description>使用架构 hugo
+参考文章
+https://blog.csdn.net/qq_42185895/article/details/113780415
+搭建位置：阿里云服务器+部署在github上
+遇到的问题： github相关
+服务器需要增加一个新的ssh 2021之后不再支持用户名+密码登录，需要使用token进行登录 </description>
+    </item>
+    
     <item>
       <title>Blog</title>
-      <link>https://li772.github.io/post/blog/</link>
+      <link>http://li772.github.io/post/blog/</link>
       <pubDate>Tue, 04 Oct 2022 18:00:39 +0800</pubDate>
       
-      <guid>https://li772.github.io/post/blog/</guid>
+      <guid>http://li772.github.io/post/blog/</guid>
       <description>Architecture https://icyfenix.cn
 服务架构演进史 单体 → 原始分布式 为了提升性能和算力，想增加多台单体计算机构建原始分布式架构
 但由于硬件的限制，以及网络可靠性的限制，让分布式存储、远程调用都停止不前
